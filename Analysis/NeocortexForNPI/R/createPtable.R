@@ -50,24 +50,24 @@ createPtable <- function( compArgs, filename ) {
   } 
   
   ## From NPI:::checkMEFpassword
-  library( secret )
-  # Check that the current project has a valid MEF password
-  if ( is.null(compArgs$get('service')) ) {
-    if ( is.null(compArgs$get('dbName')) ) {
-      if ( is.null(compArgs$get('dbname')) ) {
-      } else {
-        password_key <- paste0( compArgs$get('dbname'), '_password' )
-      }
-    } else {
-      password_key <- paste0( compArgs$get('dbName'), '_password' )
-    }
-  } else {
-    password_key <- paste0( compArgs$get('service'), '_password' )
-  }
-  vault <- topsecret::get_secret_vault()
-  if ( !( password_key %in% secret::list_secrets(vault=vault)$secret)) {
-    add_secret(name=password_key,value=readline("Enter MEF file password: "),users=Sys.info()['user'],vault=vault)
-  }
+#  library( secret )
+#  # Check that the current project has a valid MEF password
+#  if ( is.null(compArgs$get('service')) ) {
+#    if ( is.null(compArgs$get('dbName')) ) {
+#      if ( is.null(compArgs$get('dbname')) ) {
+#      } else {
+#        password_key <- paste0( compArgs$get('dbname'), '_password' )
+#      }
+#    } else {
+#      password_key <- paste0( compArgs$get('dbName'), '_password' )
+#    }
+#  } else {
+#    password_key <- paste0( compArgs$get('service'), '_password' )
+#  }
+#  vault <- topsecret::get_secret_vault()
+#  if ( !( password_key %in% secret::list_secrets(vault=vault)$secret)) {
+#    add_secret(name=password_key,value=readline("Enter MEF file password: "),users=Sys.info()['user'],vault=vault)
+#  }
   
   DBI:::dbDisconnect( conn )
   
