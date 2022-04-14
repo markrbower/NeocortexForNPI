@@ -12,8 +12,10 @@ NPI_testbed <- function( compArgs ) {
   
   futs <- vector( "list", nbrWorkers )
   for ( idx in seq(1,nbrWorkers) ) { futs[[idx]] <- future::future(1) }
+ 
+  compArgs_base <- compArgs 
+#  compArgs_base <- NPI:::checkRestartProgressAndPassword( compArgs )
   
-  compArgs_base <- NPI:::checkRestartProgressAndPassword( compArgs )
   CW <- compArgs$get( 'correlationWindow' )
   bufferSizePower <- 24
   compArgs_base$findClass('analysisInformer')$add( list(bufferSize=2^bufferSizePower) )
