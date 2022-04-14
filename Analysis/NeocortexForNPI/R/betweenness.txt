@@ -1,0 +1,14 @@
+debug at ~/Dropbox/Documents/Concepts/2021_11_19_NetworkPatternIdentifier/NPI/Analysis/NPI/b_c.R#9: value <- igraph::estimate_betweenness(graph = grph, cutoff = cutoff)
+Called from: eval(expr, p)
+debug at ~/Dropbox/Documents/Concepts/2021_11_19_NetworkPatternIdentifier/NPI/Analysis/NPI/b_c.R#4: cutoffs <- c(c(2, 5, 10, 20, 50, 100, 200, 500, 1000))
+debug at ~/Dropbox/Documents/Concepts/2021_11_19_NetworkPatternIdentifier/NPI/Analysis/NPI/b_c.R#6: for (cutoff in cutoffs) {
+    sink("betweenness.txt", append = TRUE)
+    value <- igraph::estimate_betweenness(graph = grph, cutoff = cutoff)
+    print(value)
+    sink()
+}
+debug at ~/Dropbox/Documents/Concepts/2021_11_19_NetworkPatternIdentifier/NPI/Analysis/NPI/b_c.R#7: sink("betweenness.txt", append = TRUE)
+debug at ~/Dropbox/Documents/Concepts/2021_11_19_NetworkPatternIdentifier/NPI/Analysis/NPI/b_c.R#9: value <- igraph::estimate_betweenness(graph = grph, cutoff = cutoff)
+[1] 2
+[1] 2
+Called from: igraph::estimate_betweenness(graph = grph, cutoff = cutoff)

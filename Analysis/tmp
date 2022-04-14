@@ -1,0 +1,500 @@
+   22  git commit -m "Included full betweenness computation in b_c."
+   23  git push
+   24  git push
+   25  git push
+   26  git push
+   27  mysql -u root
+   28  history > tmp
+   29  vi tmp
+   30  pwd
+   31  cd /Volumes/Data
+   32  ls
+   33  cd NV
+   34  ls
+   35  cd results/
+   36  ls
+   37  mysql -u root nv < NV_24_005_03.sql
+   38  mysql -u root
+   39  pwd
+   40  cd ~
+   41  mysql -u root
+   42  pwd
+   43  cd ~/Dropbox/Documents/Database/
+   44  ls
+   45  mysql -u root NV < epochs.sql
+   46  mysql -u root
+   47  pwd
+   48  cd ~/Dropbox/Documents/src
+   49  ls
+   50  cd ~/Dropbox/Documents/Concepts/2022_03_11_ML_class/
+   51  ls
+   52  cd Analysis/
+   53  ls
+   54  cd ML_class/
+   55  ls
+   56  cd Python/
+   57  vi 06-convnet.ipynb
+   58  ls
+   59  jupyter 06-convnet.ipynb
+   60  jupyter
+   61  jupyter notebook
+   62  ls
+   63  jupyter notebook 06-convnet.ipynb
+   64  vi 06-convnet.ipynb 
+   65  rm 06-convnet.ipynb 
+   66  vi 06-convnet.ipynb
+   67  jupyter notebook 06-convnet.ipynb
+   68  pip3 install jupyterlab
+   69  jupyter lab
+   70  jupyter lab
+   71  ls
+   72  jupyter notebook 06-convnet.ipynb
+   73  pip3 install res
+   74  jupyter notebook 06-convnet.ipynb
+   75  pwd
+   76  pwd
+   77  ls
+   78  cd 
+   79  cd /Users/markrbower/Dropbox/Documents/Concepts/2022_03_11_ML_class/Analysis/ML_class/Python
+   80  ls
+   81  cd pytorch-Deep-Learning-master/
+   82  ls
+   83  jupyter notebook  06-convnet.ipynb
+   84  pip3 install torch
+   85  jupyter notebook  06-convnet.ipynb
+   86  cd /
+   87  sudo du -sm *
+   88  cd ~/Documents/
+   89  sudo du -sm *
+   90  pwd
+   91  cd ~/Dropbox/Documents/Concepts
+   92  find . -name "*.R"  -exec grep -Hn --color=auto "sink" '{}' \;
+   93  find . -name "*.R"  -exec grep -Hn --color=auto "sink" '{}' \;
+   94  cd ~/Dropbox
+   95  ls
+   96  ls -al
+   97  history > tmp
+   98  vi tmp
+   99  sudo du -sm *
+  100  pwd
+  101  cd ..
+  102  sudo du -sm *
+  103  pwd
+  104  cd Dropbox
+  105  sudo du -sm *
+  106  cd /Volumes/Macintosh\ HD/Users/markrbower/Dropbox/
+  107  ls -al
+  108  rm -rf .dropbox.cache
+  109  sudo rm -rf .dropbox.cache
+  110  pwd
+  111  pdw
+  112  pwd
+  113  cd .dropbox.cache/
+  114  ls -al
+  115  defaults write com.apple.finder AppleShowAllFiles TRUE;killall Finder
+  116  pwd
+  117  pwd
+  118  cd ..
+  119  pwd
+  120  cd ~
+  121  ls
+  122  mysql -u root
+  123  mysql -u root
+  124  mysql -u root
+  125  mysql -u root
+  126  mysql -u root
+  127  mysql -u root
+  128  pwd
+  129  cd Concepts/2021_11_19_NetworkPatternIdentifier/NPI
+  130  ls -al
+  131  git add .
+  132  git commit -m "Added the b_c function."
+  133  git push
+  134  git add .
+  135  git commit -m "Added the b_c function."
+  136  git push
+  137  pwd
+  138  ls -al
+  139  cd Analysis/
+  140  ls
+  141  cd 
+  142  pwd
+  143  cd /Users/markrbower/Dropbox/Documents/Concepts/2021_11_19_NetworkPatternIdentifier/NPI
+  144  pwd
+  145  ls
+  146  ccd Analysis/
+  147  ls
+  148  cd Analysis/
+  149  ls
+  150  cd NPI/
+  151  ls
+  152  cd R
+  153  ls -al
+  154  cd ..
+  155  pwd
+  156  cd ..
+  157  cd ..
+  158  pwd
+  159  ls -al
+  160  git push
+  161  git filter-repo --strip-blobs-bigger-than 10M
+  162  PACKAGE_TOOL install git-filter-repo
+  163  brew install git-filter-repo
+  164  git filter-repo --strip-blobs-bigger-than 10M
+  165  git filter-repo --strip-blobs-bigger-than 10M --force
+  166  git add .
+  167  git commit -m "File size errors"
+  168  git push
+  169  history
+  170  git push
+  171  pwd
+  172  ls -al
+  173  git push NPI
+  174  pwd
+  175  ls -al
+  176  vi .gitignore
+  177  rm -rf .git
+  178  mkdir safe; mv !(safe) safe
+  179  git clone git@github.com:markrbower/NPI.git
+  180  mv safe/* NPI; rm -rf safe
+  181  cd NPI
+  182  vi .gitignore
+  183  git add .
+  184  git commit -m "Initial commit"
+  185  git push
+  186  ls
+  187  pwd
+  188  pwd
+  189  cd ..
+  190  ls
+  191  ls -al
+  192  cd NPI
+  193  pwd
+  194  ls -al
+  195  vi .gitignore 
+  196  vi ../.gitignore 
+  197  rm ../.gitignore
+  198  ri -rf .git
+  199  rm -rf .git
+  200  pwd
+  201  cd ..
+  202  ls
+  203  mv NPI/* .
+  204  ls
+  205  pwd
+  206  cd ..
+  207  ls
+  208  pwd
+  209  mv NPI/* .
+  210  ls
+  211  ls -al NPI
+  212  rm -rf NPI
+  213  pwd
+  214  ls
+  215  ls
+  216  pwd
+  217  ls
+  218  mkdir safe; mv !(safe) safe
+  219  ls
+  220  git clone git@github.com:markrbower/NPI.git
+  221  ls -al
+  222  mv safe/* NPI; rm -rf safe
+  223  ls
+  224  cd NPI
+  225  ls -al
+  226  vi .gitignore
+  227  pwd
+  228  cd ..
+  229  ls -al
+  230  cd NPI
+  231  ls
+  232  pwd
+  233  vi .gitignore 
+  234  pwd
+  235  ls -al
+  236  rm openmp-13.0.0-darwin21-Release.tar.gz 
+  237  ls -al
+  238  git add .
+  239  git commit -m "Initial commit"
+  240  git push
+  241  farnam
+  242  farnam
+  243  farnam
+  244  farnam
+  245  farnam
+  246  farnam
+  247  clr
+  248  clear
+  249  farnam
+  250  farnam
+  251  farnam
+  252  farnam
+  253  farnam
+  254  farnam
+  255  farnam
+  256  farnam
+  257  farnam
+  258  farnam
+  259  farnam
+  260  farnam
+  261  pwd
+  262  pwd
+  263  ls
+  264  pwd
+  265  ls
+  266  cd ~/Dropbox/Documents/
+  267  cd Concepts
+  268  ls
+  269  cd 2021_11_19_NetworkPatternIdentifier
+  270  ls
+  271  cd NPI
+  272  ls
+  273  cd Analysis/
+  274  ls
+  275  cd NPI
+  276  cd R
+  277  grep findValidSequential *.R
+  278  pwd
+  279  cd ..
+  280  find . -name "*.R"  -exec grep -Hn --color=auto "password" '{}' \;
+  281  pwd
+  282  cd /Volumes/Data/NV/
+  283  ls
+  284  cd NVC1001_24_005_2/
+  285  ls
+  286  cd ..
+  287  pwd
+  288  ls
+  289  cd NV_Human_Sleep/
+  290  pwd
+  291  ls
+  292  pwd
+  293  cd ..
+  294  ls
+  295  cd NVC1001_24_005_2/
+  296  ls
+  297  pwd
+  298  cd ~
+  299  conda install -c conda-forge prompt
+  300  pip3 install import_ipynb
+  301  pip3 install import-ipynb
+  302  sudo apt install updates && sudo apt install upgrades
+  303  java
+  304  sudo apt install -y libffi-dev
+  305  sudo brew install updates && sudo brew install upgrades
+  306  brew install updates && sudo brew install upgrades
+  307  brew install -y libffi-dev
+  308  brew install libffi-dev
+  309  pwd
+  310  cd ~/markrbower/mpi
+  311  cd cd ~
+  312  ls
+  313  cd ~
+  314  ls
+  315  cd pwd
+  316  cd ~markrbower/mpi/lib/
+  317  ls
+  318  echo $PATH
+  319  vi /Users/markrbower/.profile 
+  320  cd /Users/markrbower/Dropbox/Documents/Concepts/2022_03_20_OpenXForNPI/Analysis/OpenXForNPI/C
+  321  ls
+  322  cd Debug/
+  323  ls
+  324  which makefile
+  325  which ./makefile
+  326  pwd
+  327  cd /bin
+  328  ls
+  329  which gmake
+  330  which gcc
+  331  pwd
+  332  cd /usr/bin
+  333  ls
+  334  pwd
+  335  which cc
+  336  pwd
+  337  cd ~/Dropbox/Documents/src/eclipse_workspace/OpenXForNPI/
+  338  ls
+  339  cd src
+  340  cd ../Debug/
+  341  ls
+  342  cd src
+  343  ls
+  344  cd ..
+  345  pwd
+  346  ls
+  347  cd ..
+  348  cd Debug/
+  349  ls
+  350  ls ../src
+  351  /Users/markrbower/mpi/bin/mpicc  -o "OpenXForNPI"
+  352  ls
+  353  /Users/markrbower/mpi/bin/mpicc  -o "OpenXForNPI" -v
+  354  /Users/markrbower/mpi/bin/mpicc  -c OpenXForNPI.cpp
+  355  ls
+  356  cd ../src
+  357  ls
+  358  /Users/markrbower/mpi/bin/mpicc  -c OpenXForNPI.cpp
+  359  ls -al
+  360  /Users/markrbower/mpi/bin/mpicc  -o "OpenXForNPI"
+  361  /Users/markrbower/mpi/bin/mpicc  -o "OpenXForNPI" -v
+  362  /Users/markrbower/mpi/bin/mpicc  -o "OpenXForNPI" -v -lcs50
+  363  /Users/markrbower/mpi/bin/mpicc  -o "OpenXForNPI" -v
+  364  pwd
+  365  ls
+  366  rm *.o
+  367  ls
+  368  /Users/markrbower/mpi/bin/mpicc  -o "OpenXForNPI" -v
+  369  ls
+  370  brew install openmpi
+  371  /Users/markrbower/mpi/bin/mpicc  -o "OpenXForNPI" -v
+  372  vi OpenXForNPI.cpp 
+  373  /Users/markrbower/mpi/bin/mpicc  -o OpenXForNPI -v
+  374  /Users/markrbower/mpi/bin/mpicc  -o OpenXForNPI -v -lm
+  375  lss
+  376  ls
+  377  vi cpi.cpp
+  378  pwd
+  379  ls
+  380  vi OpenXForNPI.cpp 
+  381  /Users/markrbower/mpi/bin/mpicc  -c OpenXForNPI
+  382  ls 
+  383  /Users/markrbower/mpi/bin/mpicc -c OpenXForNPI.cpp 
+  384  ls
+  385  /Users/markrbower/mpi/bin/mpicc  -o OpenXForNPI -v -lm OpenXForNPI.cpp
+  386  ls
+  387  /Users/markrbower/mpi/bin/mpicc  -o OpenXForNPI -lm OpenXForNPI.cpp
+  388  ls -al
+  389  OpenXForNPI
+  390  ./OpenXForNPI
+  391  /Users/markrbower/mpi/bin/mpicc OpenXForNPI.cpp
+  392  ls
+  393  rm a.out
+  394  /Users/markrbower/mpi/bin/mpicc  -o OpenXForNPI OpenXForNPI.cpp
+  395  ./OpenXForNPI
+  396  ls
+  397  cp OpenXForNPI.cpp cpi.cpp
+  398  ls
+  399  ls
+  400  ls
+  401  which mpirun
+  402  mpirun matvec
+  403  mpirun ./matvec
+  404  mpirun -n 4 ./matvec
+  405  mpirun -n 4 ./matvec
+  406  pwd
+  407  ls
+  408  ls -al
+  409  cd ~/Dropbox/Documents/src/eclipse_workspace
+  410  ls
+  411  cd OpenXForNPI/
+  412  ls
+  413  cd src
+  414  ls
+  415  mpirun -n 4 ./matvec
+  416  mpirun -n 4 ./matvec
+  417  mpirun -n 4 ./matvec
+  418  mpirun -n 4 ./matvec
+  419  mpirun -n 4 ./matvec
+  420  mpirun -n 4 ./matvec
+  421  mpirun -n 4 ./matvec
+  422  mpirun -n 4 ./matvec
+  423  mpirun -n 4 ./matvec
+  424  mpirun -n 4 ./matvec
+  425  mpirun -n 4 ./matvec
+  426  mpirun -n 4 ./matvec
+  427  mpirun -n 4 ./matvec
+  428  mpirun -n 4 ./matvec
+  429  mpirun -n 4 ./matvec
+  430  mpirun -n 4 ./matvec
+  431  mpirun -n 4 ./matvec
+  432  mpirun -n 4 ./matvec
+  433  mpirun -n 4 ./matvec
+  434  mpirun -n 4 ./matvec
+  435  mpirun -n 4 ./matvec
+  436  mpirun -n 4 ./matvec
+  437  mpirun -n 4 ./matvec
+  438  mpirun -n 4 ./matvec
+  439  mpirun -n 4 ./matvec
+  440  mpirun -n 4 ./matvec
+  441  mpirun -n 4 ./matvec
+  442  mpirun -n 4 ./matvec
+  443  mpirun -n 4 ./matvec
+  444  mpirun -n 4 ./matvec
+  445  mpirun -n 4 ./matvec
+  446  mpirun -n 4 ./matvec
+  447  mpirun -n 4 ./matvec
+  448  mpirun -n 4 ./matvec
+  449  99*50
+  450  mpirun -n 4 ./matvec
+  451  mpirun -n 4 ./matvec
+  452  mpirun -n 4 ./matvec
+  453  brew install --cask mkvtoolnix
+  454  pwd
+  455  ls
+  456  mpirun -n 4 ./matmat
+  457  mpirun -n 4 ./matmat
+  458  mpirun -n 4 ./matmat
+  459  ls
+  460  ls
+  461  mpirun -n 4 ./matmatlog
+  462  ls
+  463  jumpsho
+  464  jumpshot
+  465  jumpshot &
+  466  pwd
+  467  ls
+  468  more pmatmat.log.clog2 
+  469  ls
+  470  jumpshot &
+  471  pwd
+  472  ls
+  473  which clog2TOslog2.jar
+  474  echo $PATH
+  475  source ~/.profile
+  476  echo $PATH
+  477  which clog2TOslog2.jar
+  478  clog2TOslog2.jar
+  479  clog2TOslog2
+  480  java pmatmat.log.slog2 pmatmat.log.clog2
+  481  java pmatmat.log.clog2 pmatmat.log.slog2
+  482  pwd
+  483  ls
+  484  java ./pmatmat.log.slog2 ./pmatmat.log.clog2
+  485  java ./pmatmat.log.clog2 ./pmatmat.log.slog2
+  486  pwd
+  487  java slog2.output.Clog2ToSlog2 ./pmatmat.log.clog2
+  488  java Clog2ToSlog2 ./pmatmat.log.clog2
+  489  java Clog2ToSlog2.jar ./pmatmat.log.clog2
+  490  Clog2ToSlog2 ./pmatmat.log.clog2
+  491  head pmatmat.log.clog2
+  492  clog2TOslog2 -h
+  493  pwd
+  494  ls
+  495  ls -al
+  496  jumpshot &
+  497  pwd
+  498  which java
+  499  which clog2TOslog2.jar
+  500  cd /opt/X11
+  501  ls
+  502  ls lib
+  503  cd include
+  504  pwd
+  505  pdw
+  506  pwd
+  507  ls
+  508  cd X11
+  509  ls
+  510  pwd
+  511  pwd
+  512  cd ~/Dropbox/Documents/Concepts/2020_12_01_NeocortexForNPI
+  513  ls
+  514  cd NeocortexForNPI/
+  515  ls
+  516  cd Analysis/
+  517  ls
+  518  history > tmp
+  519  vi tmp
+  520  find . -name "*.R"  -exec grep -Hn --color=auto "secret" '{}' \;
+  521  history > tmp

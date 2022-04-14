@@ -37,3 +37,11 @@ vignettes/*.pdf
 
 # R Environment Variables
 .Renviron
+
+# Raw data
+**/*.ncs
+**/*.Rdata
+
+# Singularity
+**/*.sif
+
