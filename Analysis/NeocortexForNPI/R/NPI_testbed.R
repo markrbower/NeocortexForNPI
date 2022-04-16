@@ -26,11 +26,14 @@ NPI_testbed <- function( compArgs ) {
     filename <- fileProvider$nextElem()
     compArgs_file <- createPtable( compArgs_base, filename )
     print( filename )
-    compArgs_file <- topconnect::appendFileMetadata( compArgs_file, filename ) # 'info' should be added to 'compArgs' here
+    compArgs_file <- topconnect::appendFileMetadata( compArgs_file, filename, file_password="erlichda" ) # 'info' should be added to 'compArgs' here
+    print( "append done")
     cases <- topconnect::caseIter( compArgs_file, 6 )
+    print( "caseIter" )
     #    foreach::foreach(case = cases) %dopar% { # have the ability to do files in parallel as well as run futures (below)
     while ( cases$hasNext() ) {
       case <- cases$nextElem()
+      print( case )
       compArgs_file$findClass('metadataInformer')$set( "case", case )
       cat( " : ", case$centerTime )
       idx <- idx + 1
