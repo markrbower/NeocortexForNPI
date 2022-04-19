@@ -44,7 +44,7 @@ NPI_window_testbed <- function(path,taskName,institution,lab,experiment,subject,
   T <- system.time( NPI_testbed( compArgs ) )
   
   # Store the parms and times to the database.
-  conn <- DBI::dbConnect( RMySQL::MySQL(), user=db_user, password=password, host=hostname, dbname=dbName)
+  conn <- DBI::dbConnect( RMySQL::MySQL(), user=db_user, password=db_password, host=hostname, dbname=dbName)
   query <- paste0( "insert into testbed_halo (subject,channel,cw,cc_threshold,user,sys,elapsed) values " )
   query <- paste0( query, "(\'", fdata$subject, "\',\'", fdata$channel, "\'," )
   query <- paste0( query, correlationWindow,",",CCthreshold,",",EDthreshold,",",blackout,",",T[1],",",T[2],",",T[3],");")

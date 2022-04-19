@@ -13,6 +13,12 @@ processThisCase <- function( case, compArgs_file, filename ) {
     # Set up the database handlers
     # Create the databaseInsertBuffer
     fields <- c('subject','channel','time','waveform','clusterid','seizureUsed','peak','energy','incident','weights','UUID');
+    
+    print( paste0( "password: ", compArgs_file$get('password') ) )
+    print( paste0( "db_password: ", compArgs_file$get('db_password') ) )
+    print( paste0( "file_password: ", compArgs_file$get('file_password') ) )
+
+    
     dib <- topconnect::databaseInsertBuffer(compArgs_caseSpecific$get("dbname"),compArgs_caseSpecific$get("P"), fields, 500, updates=c('clusterid'), dbuser='root', host='localhost', password='' );
     static_fields <- list('subject','channel','seizureUsed','UUID')
     static_values <- list(compArgs_caseSpecific$get('subject'),compArgs_caseSpecific$get('channel'),as.numeric(compArgs_caseSpecific$get('case')$centerTime),compArgs_caseSpecific$get('case')$UUID)
