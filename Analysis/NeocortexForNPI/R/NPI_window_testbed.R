@@ -30,6 +30,7 @@ NPI_window_testbed <- function(path,taskName,institution,lab,experiment,subject,
   }
   aInf <- RFactories::analysisInformer(experiment='NeuroVista',subject='11',centerTime=0,pattern="*.mef",lab="RNCP")
   compArgs$add( aInf )
+  compArgs <- checkRestartProgressAndPassword( compArgs )
   # Load the parameters from this command line, not a parameter file.
   parms <- c(minimum_sampling_frequency=32000,correlationWindow=unname(correlationWindow),blackout=unname(blackout),CCthreshold=unname(CCthreshold),EDthreshold=unname(EDthreshold),waveform_mask=unname(waveform_mask),computation_mask=unname(computation_mask),database_update_limit=100,filter_detect_lowF=unname(filter_detect_lowF),filter_detect_highF=unname(filter_detect_highF),filter_keep_lowF=unname(filter_keep_lowF),filter_keep_highF=unname(filter_keep_highF),signalType='AP')
   pInf <- RFactories::parameterInformer( parms )
