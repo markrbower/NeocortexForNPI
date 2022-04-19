@@ -14,10 +14,10 @@ processThisCase <- function( case, compArgs_file, filename ) {
     # Create the databaseInsertBuffer
     fields <- c('subject','channel','time','waveform','clusterid','seizureUsed','peak','energy','incident','weights','UUID');
 
-    dib <- topconnect::databaseInsertBuffer(compArgs_caseSpecific$get("dbname"),compArgs_caseSpecific$get("P"), fields, 500, updates=c('clusterid'), dbuser='root', host=compArgs_file$get('hostname'), password=compArgs_file$get('password') );
+    dib <- topconnect::databaseInsertBuffer(compArgs_caseSpecific$get("dbname"),compArgs_caseSpecific$get("P"), fields, 500, updates=c('clusterid'), dbuser='root', host=compArgs_file$get('host'), password=compArgs_file$get('password') );
     static_fields <- list('subject','channel','seizureUsed','UUID')
     static_values <- list(compArgs_caseSpecific$get('subject'),compArgs_caseSpecific$get('channel'),as.numeric(compArgs_caseSpecific$get('case')$centerTime),compArgs_caseSpecific$get('case')$UUID)
-    dub <- topconnect::databaseUpdateBuffer(compArgs_caseSpecific$get("dbname"),compArgs_caseSpecific$get('P'), 5000, static_fields, static_values, 'time', 'clusterid', host=compArgs_file$get('hostname'), password=compArgs_file$get('password') );
+    dub <- topconnect::databaseUpdateBuffer(compArgs_caseSpecific$get("dbname"),compArgs_caseSpecific$get('P'), 5000, static_fields, static_values, 'time', 'clusterid', host=compArgs_file$get('host'), password=compArgs_file$get('password') );
 
     counterIdx = 0
     timeConstraints <- NeocortexForNPI:::checkTimeConstraints( compArgs_caseSpecific$get('info'), case )
