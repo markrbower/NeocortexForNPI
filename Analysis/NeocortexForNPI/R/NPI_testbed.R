@@ -10,9 +10,6 @@ NPI_testbed <- function( compArgs ) {
 #  p_limit <- 0
   p_limit <-  nbrWorkers + round( ( nbrFutures - nbrWorkers ) / 2 )
   
-  futs <- vector( "list", nbrWorkers )
-  for ( idx in seq(1,nbrWorkers) ) { futs[[idx]] <- future::future(1) }
- 
   compArgs_base <- compArgs 
 #  compArgs_base <- NPI:::checkRestartProgressAndPassword( compArgs )
   
@@ -40,15 +37,10 @@ NPI_testbed <- function( compArgs ) {
       if ( idx > nbrWorkers ) {
         idx <- 1
       }
-      # Gate
-      val <- future::value( futs[[idx]] )
-#      futs[[idx]] <- future::future( processThisCase( case, compArgs_file, filename ) )
       processThisCase( case, compArgs_file, filename )
     } # cases$hasNext
     rm( compArgs_file)
     gc()
   } # fileProvider$hasNext
-  v <- future::value( db_future ) # Wait for the previous write to finish
-  plan( sequential )
 }
 
