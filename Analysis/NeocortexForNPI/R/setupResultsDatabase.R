@@ -1,21 +1,21 @@
-setupResultsDatabase <- function( variables ) {
+setupResultsDatabase <- function( compArgs, progressFields ) {
   #' @export
   library( DBI )
   library( RMySQL )
   
-  hostname <- RFactories:::parseArg( variables, 'hostname' )
+  hostname <- compArgs$get('host')
   if ( length(hostname) == 0 ) {
     hostname <- 'localhost'
   }
-  dbName <- RFactories:::parseArg( variables, 'dbName' )
+  dbName <- compArgs$get('dbname')
   if ( length(dbName) == 0 ) {
     hostname <- 'mysql'
   }
-  db_user <- RFactories:::parseArg( variables, 'db_user' )
+  db_user <- compArgs$get('user')
   if ( length(db_user) == 0 ) {
     db_user <- 'root'
   }
-  password <- RFactories:::parseArg( variables, 'password' )
+  password <- compArgs$get('password')
   if ( length(password) == 0 ) {
     password <- ''
   }
@@ -33,11 +33,14 @@ setupResultsDatabase <- function( variables ) {
   query <- paste0( "CREATE TABLE IF NOT EXISTS testbed_halo (subject varchar(32), channel varchar(32), cw int, CCthreshold float, EDthreshold float, blackout float, user float, sys float, elapsed float);" )
   DBI::dbGetQuery( conn, query )
   
+  # Progress
+  query <- namedListToCreateQuery( "progress", progressFields, c(done="tinyint(1)") )
+  print( paste0( "setupResultsDatabase: ", query ) )
+  DBI::dbGetQuery( conn, query )
+  
   DBI::dbDisconnect( conn )
-
-  NPI:::createBaseNPItables( dbName="testbed_results", hostname=hostname, password=password )
+  
+  NeocortexForNPI:::createBaseNPItestbedTables( dbName="testbed_results", hostname=hostname, password=password )
 
 #  populateBehaviorTablesForTestbed( dbName="testbed_results", hostname=hostname, password=password )
-
 }
-

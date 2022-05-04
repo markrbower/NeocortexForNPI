@@ -1,4 +1,4 @@
-processThisCase <- function( case, compArgs_file, filename ) {
+processThisCase <- function( case, compArgs_file, filename, progressStrings ) {
   library(DBI)
   library(NPI)
   
@@ -9,7 +9,7 @@ processThisCase <- function( case, compArgs_file, filename ) {
   case <- topconnect:::expandStringsToFields( case, "parameters", sep1=":::", sep2="::" )
   compArgs_caseSpecific$findClass('metadataInformer')$set( "case", case )
   # Now, you can populate the 'static_fields' in the databaseUpdateBuffer
-  if ( topconnect::currentProcessedLevel( compArgs_caseSpecific, case, 0 ) ) {
+  if ( topconnect:::currentProcessedLevelDynamic( progressStrings, compArgs_caseSpecific, case, 0 ) ) {
     # Set up the database handlers
     # Create the databaseInsertBuffer
     fields <- c('subject','channel','time','waveform','clusterid','seizureUsed','peak','energy','incident','weights','UUID');
@@ -141,7 +141,7 @@ processThisCase <- function( case, compArgs_file, filename ) {
         } # length(peaks) > 0
       } # iterData$hasNext
     } # iterCont$hasNext
-    topconnect::markAsProcessed( compArgs_caseSpecific, case, 1 )
+    topconnect:::markAsProcessedDynamic( progressStrings, compArgs_caseSpecific, case, 1 )
   } # currentProcessedLevel
   return(1)
 }

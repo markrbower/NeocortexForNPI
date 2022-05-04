@@ -12,13 +12,12 @@ NPI_parameters <- function(...) {
   # Find data
   #print( "Looking for files" )
   mefFiles <- list.files("/data/Halo_data_from_Roni",pattern="*.mef",full.names=TRUE)
-#  mefFiles <- list.files("./data/Halo_data_from_Roni/mef2",pattern="*.mef",full.names=TRUE)
+  if ( length(mefFiles)== 0 ) {
+    mefFiles <- list.files("./data/Halo_data_from_Roni/mef2",pattern="*.mef",full.names=TRUE)
+  }
   L <- length( mefFiles )
   print( paste0( L, " files to process." ) )
   
-  #print( "Setup" )
-  NeocortexForNPI:::setupResultsDatabase( args )
-
   # Set parameter grid (window duration, CC threshold,  )
   # for software test
   CW <- c(300E6, 60E6)
