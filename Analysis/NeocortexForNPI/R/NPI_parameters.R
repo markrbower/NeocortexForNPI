@@ -18,12 +18,14 @@ NPI_parameters <- function(...) {
   L <- length( mefFiles )
   print( paste0( L, " files to process." ) )
   
-  # Set parameter grid (window duration, CC threshold,  )
-  # for software test
-  CW <- c(300E6, 60E6)
-  CC <- c( 0.8, 0.9 )
-  ER <- c( 1.2, 1.5 )
-  BO <- c(50E3, 10E3)
+  # Set parameter grid (window duration, CC threshold,  ) for software test
+  # CW <- c(300E6,60E6)
+  # CC <- c(0.8,0.9)
+  # ED <- c(1.2,1.5)
+  # BO <- c(50E3,10E3)
+  # save(CW,CC,ED,BO,file='parameters.RData')
+  load(file='parameters.RData')
+
   # for real
   parms <- expand.grid( CW=CW, CC=CC,ER=ER,BO=BO )
   L <- nrow(parms)

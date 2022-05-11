@@ -1,0 +1,7 @@
+Bootstrap: docker
+From: mysql/mysql-server:latest
+
+%environment
+    export MYSQL_DATABASE=testbed_results
+    export MYSQL_USER=npo_user
+    export MYSQL_PASSWORD=secret
