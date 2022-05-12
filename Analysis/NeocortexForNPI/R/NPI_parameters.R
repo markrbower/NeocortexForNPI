@@ -24,7 +24,7 @@ NPI_parameters <- function(...) {
   # ED <- c(1.2,1.5)
   # BO <- c(50E3,10E3)
   # save(CW,CC,ED,BO,file='parameters.RData')
-  load(file='/ocean/projects/ibn210001p/mbower/parameters.RData')
+  load(file='/mnt/parameters.RData')
 
   # for real
   parms <- expand.grid( CW=CW, CC=CC,ER=ER,BO=BO )
