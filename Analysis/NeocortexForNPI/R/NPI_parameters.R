@@ -57,7 +57,7 @@ NPI_parameters <- function(...) {
   
   #print( L )
   for ( idx in seq(1,L) ) {
-      NPI_window_testbed(path='/data/Halo_data_from_Roni', taskName='preprocessing', institution='Yale', lab='RCNP', experiment='Halo_test', subject='11', signalType='AP', centerTime=0, iterationType='directory', hostname=hostname, dbName=dbName, db_user=db_user, db_password='secret', file_password='erlichda', range=c(-1000,1000), minimum_sampling_frequency=20000,waveform_mask=list(seq(-6,25)),computation_mask=list(seq(3,15)),database_update_limit=100,filter_detect_lowF=600,filter_detect_highF=6000,filter_keep_lowF=600,filter_keep_highF=6000,correlationWindow=parms$CW[idx],CCthreshold=parms$CC[idx],EDthreshold=parms$ER[idx],blackout=parms$BO[idx])
+      NPI_window_testbed(path='/data/Halo_data_from_Roni', taskName='preprocessing', institution='Yale', lab='RCNP', experiment='Halo_test', subject='11', signalType='AP', centerTime=0, iterationType='directory', hostname=hostname, dbName=dbName, db_user=db_user, db_password='secret', file_password='erlichda', range=c(-1000,1000), minimum_sampling_frequency=20000,waveform_mask=list(seq(-6,25)),computation_mask=list(seq(3,15)),database_update_limit=100,filter_detect_lowF=600,filter_detect_highF=6000,filter_keep_lowF=600,filter_keep_highF=6000,correlationWindow=parms$CW[idx],CCthreshold=parms$CC[idx],EDthreshold=parms$ED[idx],blackout=parms$BO[idx])
   }
   
 }
