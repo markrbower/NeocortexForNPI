@@ -27,7 +27,7 @@ NPI_parameters <- function(...) {
   load(file='/mnt/parameters.RData')
 
   # for real
-  parms <- expand.grid( CW=CW, CC=CC,ER=ER,BO=BO )
+  parms <- expand.grid( CW=CW, CC=CC,ED=ED,BO=BO )
   L <- nrow(parms)
 
   # Loops
