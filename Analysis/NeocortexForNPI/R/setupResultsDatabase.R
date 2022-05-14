@@ -30,7 +30,7 @@ setupResultsDatabase <- function( compArgs, progressFields ) {
   query <- paste0( "USE testbed_results;" )
   DBI::dbGetQuery( conn, query )
   
-  query <- paste0( "CREATE TABLE IF NOT EXISTS testbed_halo (subject varchar(32), channel varchar(32), cw int, CCthreshold float, EDthreshold float, blackout float, user float, sys float, elapsed float);" )
+  query <- paste0( "CREATE TABLE IF NOT EXISTS testbed_halo (subject varchar(32), channel varchar(32), cw int, CCthreshold float, EDthreshold float, blackout float, user float, sys float, elapsed float, primary key(subject,channel,cw,CCthreshold,EDthreshold,blackout));" )
   DBI::dbGetQuery( conn, query )
   
   # Progress

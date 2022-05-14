@@ -1,0 +1,500 @@
+  268  cd 
+  269  cd /Users/markrbower/Dropbox/Documents/Concepts/2022_03_11_ML_class/Analysis/ML_class/Python
+  270  ls
+  271  cd pytorch-Deep-Learning-master/
+  272  ls
+  273  jupyter notebook  06-convnet.ipynb
+  274  pip3 install torch
+  275  jupyter notebook  06-convnet.ipynb
+  276  cd /
+  277  sudo du -sm *
+  278  cd ~/Documents/
+  279  sudo du -sm *
+  280  pwd
+  281  cd ~/Dropbox/Documents/Concepts
+  282  find . -name "*.R"  -exec grep -Hn --color=auto "sink" '{}' \;
+  283  find . -name "*.R"  -exec grep -Hn --color=auto "sink" '{}' \;
+  284  cd ~/Dropbox
+  285  ls
+  286  ls -al
+  287  history > tmp
+  288  vi tmp
+  289  sudo du -sm *
+  290  pwd
+  291  cd ..
+  292  sudo du -sm *
+  293  pwd
+  294  cd Dropbox
+  295  sudo du -sm *
+  296  cd /Volumes/Macintosh\ HD/Users/markrbower/Dropbox/
+  297  ls -al
+  298  rm -rf .dropbox.cache
+  299  sudo rm -rf .dropbox.cache
+  300  pwd
+  301  pdw
+  302  pwd
+  303  cd .dropbox.cache/
+  304  ls -al
+  305  defaults write com.apple.finder AppleShowAllFiles TRUE;killall Finder
+  306  pwd
+  307  pwd
+  308  cd ..
+  309  pwd
+  310  cd ~
+  311  ls
+  312  mysql -u root
+  313  mysql -u root
+  314  mysql -u root
+  315  mysql -u root
+  316  mysql -u root
+  317  mysql -u root
+  318  pwd
+  319  cd Concepts/2021_11_19_NetworkPatternIdentifier/NPI
+  320  ls -al
+  321  git add .
+  322  git commit -m "Added the b_c function."
+  323  git push
+  324  git add .
+  325  git commit -m "Added the b_c function."
+  326  git push
+  327  pwd
+  328  ls -al
+  329  cd Analysis/
+  330  ls
+  331  cd 
+  332  pwd
+  333  cd /Users/markrbower/Dropbox/Documents/Concepts/2021_11_19_NetworkPatternIdentifier/NPI
+  334  pwd
+  335  ls
+  336  ccd Analysis/
+  337  ls
+  338  cd Analysis/
+  339  ls
+  340  cd NPI/
+  341  ls
+  342  cd R
+  343  ls -al
+  344  cd ..
+  345  pwd
+  346  cd ..
+  347  cd ..
+  348  pwd
+  349  ls -al
+  350  git push
+  351  git filter-repo --strip-blobs-bigger-than 10M
+  352  PACKAGE_TOOL install git-filter-repo
+  353  brew install git-filter-repo
+  354  git filter-repo --strip-blobs-bigger-than 10M
+  355  git filter-repo --strip-blobs-bigger-than 10M --force
+  356  git add .
+  357  git commit -m "File size errors"
+  358  git push
+  359  history
+  360  git push
+  361  pwd
+  362  ls -al
+  363  git push NPI
+  364  pwd
+  365  ls -al
+  366  vi .gitignore
+  367  rm -rf .git
+  368  mkdir safe; mv !(safe) safe
+  369  git clone git@github.com:markrbower/NPI.git
+  370  mv safe/* NPI; rm -rf safe
+  371  cd NPI
+  372  vi .gitignore
+  373  git add .
+  374  git commit -m "Initial commit"
+  375  git push
+  376  ls
+  377  pwd
+  378  pwd
+  379  cd ..
+  380  ls
+  381  ls -al
+  382  cd NPI
+  383  pwd
+  384  ls -al
+  385  vi .gitignore 
+  386  vi ../.gitignore 
+  387  rm ../.gitignore
+  388  ri -rf .git
+  389  rm -rf .git
+  390  pwd
+  391  cd ..
+  392  ls
+  393  mv NPI/* .
+  394  ls
+  395  pwd
+  396  cd ..
+  397  ls
+  398  pwd
+  399  mv NPI/* .
+  400  ls
+  401  ls -al NPI
+  402  rm -rf NPI
+  403  pwd
+  404  ls
+  405  ls
+  406  pwd
+  407  ls
+  408  mkdir safe; mv !(safe) safe
+  409  ls
+  410  git clone git@github.com:markrbower/NPI.git
+  411  ls -al
+  412  mv safe/* NPI; rm -rf safe
+  413  ls
+  414  cd NPI
+  415  ls -al
+  416  vi .gitignore
+  417  pwd
+  418  cd ..
+  419  ls -al
+  420  cd NPI
+  421  ls
+  422  pwd
+  423  vi .gitignore 
+  424  pwd
+  425  ls -al
+  426  rm openmp-13.0.0-darwin21-Release.tar.gz 
+  427  ls -al
+  428  git add .
+  429  git commit -m "Initial commit"
+  430  git push
+  431  farnam
+  432  farnam
+  433  farnam
+  434  farnam
+  435  farnam
+  436  farnam
+  437  clr
+  438  clear
+  439  farnam
+  440  farnam
+  441  farnam
+  442  farnam
+  443  farnam
+  444  farnam
+  445  farnam
+  446  farnam
+  447  farnam
+  448  farnam
+  449  farnam
+  450  farnam
+  451  pwd
+  452  pwd
+  453  ls
+  454  pwd
+  455  ls
+  456  cd ~/Dropbox/Documents/
+  457  cd Concepts
+  458  ls
+  459  cd 2021_11_19_NetworkPatternIdentifier
+  460  ls
+  461  cd NPI
+  462  ls
+  463  cd Analysis/
+  464  ls
+  465  cd NPI
+  466  cd R
+  467  grep findValidSequential *.R
+  468  pwd
+  469  cd ..
+  470  find . -name "*.R"  -exec grep -Hn --color=auto "password" '{}' \;
+  471  pwd
+  472  cd /Volumes/Data/NV/
+  473  ls
+  474  cd NVC1001_24_005_2/
+  475  ls
+  476  cd ..
+  477  pwd
+  478  ls
+  479  cd NV_Human_Sleep/
+  480  pwd
+  481  ls
+  482  pwd
+  483  cd ..
+  484  ls
+  485  cd NVC1001_24_005_2/
+  486  ls
+  487  pwd
+  488  cd ~
+  489  conda install -c conda-forge prompt
+  490  pip3 install import_ipynb
+  491  pip3 install import-ipynb
+  492  sudo apt install updates && sudo apt install upgrades
+  493  java
+  494  sudo apt install -y libffi-dev
+  495  sudo brew install updates && sudo brew install upgrades
+  496  brew install updates && sudo brew install upgrades
+  497  brew install -y libffi-dev
+  498  brew install libffi-dev
+  499  pwd
+  500  cd ~/markrbower/mpi
+  501  cd cd ~
+  502  ls
+  503  cd ~
+  504  ls
+  505  cd pwd
+  506  cd ~markrbower/mpi/lib/
+  507  ls
+  508  echo $PATH
+  509  vi /Users/markrbower/.profile 
+  510  pwd
+  511  cd ~/Dropbox/Documents/src/eclipse_workspace
+  512  ls
+  513  cd OpenXForNPI/
+  514  ls
+  515  cd src
+  516  ls
+  517  mpirun -n 4 ./monte-ex
+  518  mpirun -n 4 ./monte-ex .01
+  519  mpirun -n 4 ./monte-ex .00001
+  520  mpirun -n 4 ./monte-ex .00000001
+  521  mpirun -n 4 ./monte-ex .00000000001
+  522  mpirun -n 4 ./monte-ex .00000000001
+  523  mpirun -n 4 ./monte-graphics .00000000001
+  524  mpirun -n 4 ./monte-graphics 1E-10
+  525  ls
+  526  mpirun -n 4 ./monte-graphics 1E-10
+  527  mpirun -n 4 ./monte-graphics 1E-10
+  528  mpirun -n 4 ./monte-graphics 1E-10
+  529  mpirun -n 4 ./monte-graphics 1E-10
+  530  mpirun -n 4 ./monte-graphics 1E-10
+  531  mpirun -n 4 ./monte-graphics 1E-10
+  532  mpirun -n 4 ./monte-graphics 1E-10
+  533  mpirun -n 4 ./monte-graphics 1E-10
+  534  jumpshot
+  535  upshot
+  536  pwd
+  537  ls
+  538  ls
+  539  ls
+  540  pwd
+  541  ls ../Debug/
+  542  ls
+  543  rm ../Debug/onedinit.o
+  544  rm ../Debug/src/onedinit.o
+  545  ls
+  546  ls -al
+  547  mpirun -n 4 oned
+  548  mpirun -n 4 ./oned
+  549  mpirun -n 4 ./oned
+  550  mpirun -n 4 ./oned
+  551  mpirun -n 4 ./oned
+  552  mpirun -n 4 ./oned
+  553  mpirun -n 4 ./oned
+  554  mpirun -n 4 ./oned
+  555  mpirun -n 4 ./oned
+  556  mpirun -n 4 ./oned
+  557  mpirun -n 4 ./oned
+  558  mpirun -n 4 ./oned
+  559  mpirun -n 4 ./oned
+  560  mpirun -n 4 ./oned
+  561  mpirun -n 4 ./oned
+  562  mpirun -n 4 ./oned
+  563  mpirun -n 4 ./oned
+  564  mpirun -n 4 ./oned
+  565  mpirun -n 4 ./oned
+  566  mpirun -n 4 ./oned
+  567  mpirun -n 4 ./oned
+  568  mpirun -n 4 ./oned
+  569  mpirun -n 4 ./oned
+  570  mpirun -n 4 ./oned
+  571  mpirun -n 4 ./oned
+  572  mpirun -n 4 ./oned
+  573  mpirun -n 4 ./oned
+  574  mpirun -n 4 ./oned
+  575  mpirun -n 4 ./oned
+  576  mpirun -n 4 ./oned
+  577  mpirun -n 4 ./oned
+  578  mpirun -n 64 ./oned
+  579  mpirun -n 8 ./oned
+  580  mpirun -n 16 ./oned
+  581  mpirun -n 16 ./oned
+  582  mpirun -n 32 ./oned
+  583  mpirun -n 32 ./oned
+  584  pgicc
+  585  pgcc
+  586  cd ~/.secret
+  587  ls
+  588  ls -al
+  589  mv .vault .old_vault_old
+  590  ls -al
+  591  ls -al
+  592  rm .vault
+  593  rm -rf .vault
+  594  mv .old_vault_old/* .vault
+  595  mv .old_vault_old .vault
+  596  ls -al
+  597  history > tmp
+  598  vi tmp
+  599  pwd
+  600  cd ~/Dropbox/Documents/Concepts/2020_12_01_NeocortexForNPI
+  601  cd NeocortexForNPI/
+  602  ls
+  603  cd Analysis/
+  604  ls
+  605  cd ..
+  606  ls
+  607  lls -al
+  608  ls -al
+  609  git add .
+  610  git commit -m "Removed MEF password check."
+  611  git push
+  612  ls -al
+  613  ls -al Analysis/NeocortexForNPI/R
+  614  rm Analysis/NeocortexForNPI/R/colVal.RData 
+  615  rm Analysis/NeocortexForNPI/R/mysql.sif
+  616  git add .
+  617  git commit -m "Removed MEF password check."
+  618  git push
+  619  gi .gitignore 
+  620  vi .gitignore 
+  621  git push
+  622  git rm --cached Analysis/NeocortexForNPI/R/colVal.RData
+  623  pwd
+  624  git rm --cached ./Analysis/NeocortexForNPI/R/colVal.RData
+  625  git rm --cached Analysis/NeocortexForNPI/R/colVal.RData
+  626  git ls-files
+  627  git push
+  628  git add .
+  629  git commit -m "Trying to remove large file"
+  630  git push
+  631  git rm Analysis/NeocortexForNPI/R/colVal.RData
+  632  git rm ./Analysis/NeocortexForNPI/R/colVal.RData
+  633  git ls-tree -r master
+  634  git rm --cached NeocortexForNPI/R/colVal.RData
+  635  git rm --cached R/colVal.RData
+  636  git rm --cached colVal.RData
+  637  pwd
+  638  git rm --cached /Users/markrbower/Dropbox/Documents/Concepts/2020_12_01_NeocortexForNPI/NeocortexForNPI/Analysis/NeocortexForNPI/R/colVal.RData
+  639  pwd
+  640  ls -al
+  641  pwd
+  642  cp .gitignore ../../.gitignore_template
+  643  vi tmp
+  644  history > tmp
+  645  vi tmp
+  646  pwd
+  647  pwd
+  648  cd ..
+  649  pwd
+  650  cd ~/Dropbox/Documents/Concepts/2020_12_01_NeocortexForNPI
+  651  ls
+  652  git clone git@github.com:markrbower/NeocortexForNPI.git
+  653  mv safe/* NeocortexForNPI; rm -rf safe
+  654  cd NeocortexForNPI/
+  655  vi .gitignore
+  656  mv .gitignore .old_gitignore_old
+  657  cp ../../.gitignore_template .gitignore
+  658  vi .gitignore 
+  659  vi .gitignore 
+  660  git add .
+  661  git commit -m "Initial commit"
+  662  git push
+  663  pwd
+  664  vi tmp
+  665  find . -name "*.R"  -exec grep -Hn --color=auto "secret" '{}' \;
+  666  ls -al
+  667  git add .
+  668  git commit -m "Removing references to the secret package."
+  669  git push
+  670  vi tmp
+  671  find . -name "*.R"  -exec grep -Hn --color=auto "secret" '{}' \;
+  672  find . -name "*.R"  -exec grep -Hn --color=auto "dbName" '{}' \;
+  673  pwd
+  674  ls
+  675  ls -al
+  676  git add .
+  677  git commit -m "NPI_testbed was calling NPI::checkRestart..."
+  678  git push
+  679  pwd
+  680  cd ../..
+  681  ls
+  682  cd 2021_06_06_RFactories
+  683  ls
+  684  cd RFactories/
+  685  ls
+  686  cd Analysis/
+  687  ls
+  688  cd RFactories/
+  689  ls
+  690  cd R
+  691  ls
+  692  pwd
+  693  cd ../../../..
+  694  pwd
+  695  cd ..
+  696  ls
+  697  cd 2018_07_29_meftools
+  698  ls
+  699  cd meftools/
+  700  ls
+  701  cd Analysis/
+  702  ls
+  703  cd meftools/
+  704  ls
+  705  cd R
+  706  cd ../..
+  707  ls -al
+  708  cd ..
+  709  ls -al
+  710  git add .
+  711  git commit -m "Working on messages"
+  712  git push
+  713  pwd
+  714  cd ../..
+  715  ls
+  716  cd 2020_12_01_NeocortexForNPI
+  717  ls
+  718  cd NeocortexForNPI/
+  719  ls -al
+  720  git add .
+  721  git commit -m "hard-wired file password"
+  722  git push
+  723  git add .
+  724  git commit -m "hard-wired file password #2"
+  725  git push
+  726  git add .
+  727  git commit -m "add checkRestartProgressAndPassword"
+  728  git push
+  729  ls
+  730  git add .
+  731  git commit -m "looking for passwords"
+  732  git push
+  733  git add .
+  734  git commit -m "dynamically setting password for both DIB and DUB"
+  735  git push
+  736  git add .
+  737  git commit -m "dynamically setting hostname for both DIB and DUB"
+  738  git push
+  739  git add .
+  740  git commit -m "dynamically setting hostname for both DIB and DUB"
+  741  git push
+  742  git add .
+  743  git commit -m "Reading a parameter file."
+  744  git push
+  745  git add .
+  746  git commit -m "Reading a parameter file 2"
+  747  git push
+  748  git add .
+  749  git commit -m "Fixed path for the parameters file"
+  750  git push
+  751  git add .
+  752  git commit -m "Maybe just topconect changed, adding a < to an assignment?"
+  753  git push
+  754  git add .
+  755  git commit -m "/mnt/parameters"
+  756  git push
+  757  git add .
+  758  git commit -m "Fixed typo in NPI_parameters"
+  759  git push
+  760  git add .
+  761  git commit -m "Made sure all references use ED, not ER"
+  762  git push
+  763  ls
+  764  rm parameters.odt
+  765  rm parameters.rtf
+  766  history
+  767  history > tmp
