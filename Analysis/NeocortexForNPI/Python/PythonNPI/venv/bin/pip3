@@ -1,4 +1,4 @@
-#!/Users/markrbower/Dropbox/Documents/Concepts/2022_03_20_OpenXForNPI/Analysis/OpenXForNPI/Python/PythonNPI/venv/bin/python
+#!/Users/markrbower/Dropbox/Documents/Concepts/2020_12_01_NeocortexForNPI/NeocortexForNPI/Analysis/NeocortexForNPI/Python/PythonNPI_project/venv/bin/python
 # -*- coding: utf-8 -*-
 import re
 import sys

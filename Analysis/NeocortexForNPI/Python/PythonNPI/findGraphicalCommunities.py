@@ -16,17 +16,14 @@ def findGraphicalCommunities(case, variables, parms, CC):
     # Create the full graph
     cntr = 0
     if CC.shape[0] > 0:
-        tmpCC = CC[{'Tsource', 'Ttarget', 'weight'}]
-        tmpCC = tmpCC[['Tsource', 'Ttarget', 'weight']]
+        tmpCC = CC[['Tsource', 'Ttarget', 'weight']]
         tuples = [tuple(r) for r in tmpCC.to_numpy()]
         grph = ig.Graph.TupleList(tuples, edge_attrs='weight')
 
         uniqueTarget = np.unique(CC['Ttarget'])
 
+        output = []
         N = len(uniqueTarget)
-        data = {'counter': np.zeros(N), "time": [None] * N, 'incident': [None] * N, 'weights': [None] * N,
-                'clusterid': np.zeros(N)}
-        output = pd.DataFrame(data)
         subject = variables['subject']
         channel = variables['channel']
         clusterid = 0
@@ -83,13 +80,15 @@ def findGraphicalCommunities(case, variables, parms, CC):
                     str_incident = ','.join(map(str, map(int, incident)))
                     str_weights = ','.join(map(str, weights))
                     cc_idx = np.where(CC['Ttarget'] == tCN)
-                    waveform_str = list(CC['WVtarget'][cc_idx[0]])[0]
+                    tmp = list(CC['WVtarget'][cc_idx[0]])
+                    waveform_str = ','.join(map(str,tmp[0]))
 
                     # database
                     if use_database:
                         cc_idx = np.where(CC['Ttarget'] == tCN)
-                        waveform_str = CC['WVtarget'][cc_idx[1]]
-                        waveform = np.array(list(map(float, map(lambda x: x.strip(''), waveform_str.split(',')))))
+                        waveform = CC['WVtarget'][cc_idx[0]]
+                        waveform_str = ','.join(waveform)
+#                        waveform = np.array(list(map(float, map(lambda x: x.strip(''), waveform_str.split(',')))))
                         abs_waveform = np.absolute(waveform)
                         peak_idx = np.where(abs_waveform == np.max(abs_waveform))
                         peakVal = abs_waveform[peak_idx[1]] * np.sign(waveform[cm[peak_idx[1]]])
@@ -102,7 +101,13 @@ def findGraphicalCommunities(case, variables, parms, CC):
                         # dib$insert( result )
 
                     # data to pass forward
-                    output.loc[cntr] = str(int(tCN)), str_incident, str_weights, 0, waveform_str
+                    tmp = pd.DataFrame(
+                        {'time': [str(int(tCN))], 'incident': [str_incident], 'weights': [str_weights], 'clusterid': [0],
+                         'waveform': [waveform_str]})
+                    if len(output)==0:
+                        output = tmp
+                    else:
+                        output = pd.concat([output,tmp])
                     cntr = cntr + 1
 
     return output

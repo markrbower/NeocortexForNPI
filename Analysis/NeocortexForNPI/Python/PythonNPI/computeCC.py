@@ -8,7 +8,7 @@ def computeCC(parms, peaks, t0):
     # Default and check
     CC = pd.DataFrame()  # How BIG a dataframee?!
     if len(peaks) > 0:
-        T = peaks['time']
+        T = np.asarray(peaks['time'])
         # Which peaks should be considered "targets"?
         v = np.where(T >= t0)[0]
         if len(v) > 0:

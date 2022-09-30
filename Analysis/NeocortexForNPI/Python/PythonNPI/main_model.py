@@ -1,16 +1,11 @@
-import csv
-import io
-import pandas as pd
 import numpy as np
+import pandas as pd
 
 # 1. Set parameters
 # 1.a. NPI parameters
 from computeCC import computeCC
-from computePeaks import computePeaks
-from mergePeaks import mergePeaks
 from findGraphicalCommunities import findGraphicalCommunities
-from assignClusterids import assignClusterids
-from testTheResults import testTheResults
+from mergePeaks import mergePeaks
 
 parms = {'cc_threshold': 0.85, 'er_threshold': 0.5, 'CW': 2000,
          'firingRateThreshold': 0.01, 'blackout': 4, 'computation_mask': [1, 2, 3, 4, 5, 6, 7]}
@@ -99,8 +94,8 @@ if len(messages) > 0:
         cntMessage = cntMessage + 1
         # 3.b.2 Find the rows within 'data' to be analyzed
         dataIdxMessage = np.where(np.in1d(data['time'], message['idx']))[0]
-        T = data['time'][dataIdxMessage]
-        voltage = data['voltage'][dataIdxMessage]
+        T = np.asarray(data['time'])[dataIdxMessage]
+        voltage = np.asarray(data['voltage'])[dataIdxMessage]
         dataIdxBoth = np.where(np.in1d(data['time'], message['idx'] + message_post['idx']))[0]
         # 3.c The bulk of the NPI algorithm occurs here in four steps:
         #    1. Find peaks in the data
@@ -127,5 +122,10 @@ if len(messages) > 0:
         # 3.c.3 Graph processing steps
         # Only find communities for the targets.
         nodes = findGraphicalCommunities(message_post, peakComputationVariables, parms, CC)
+
+        message_pre = message
+        message = message_post
+        message_post = next(iter_messages, None)
+
 
 

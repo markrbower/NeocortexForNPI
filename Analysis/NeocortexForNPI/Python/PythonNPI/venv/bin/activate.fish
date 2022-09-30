@@ -29,7 +29,7 @@ end
 # Unset irrelevant variables.
 deactivate nondestructive
 
-set -gx VIRTUAL_ENV "/Users/markrbower/Dropbox/Documents/Concepts/2022_03_20_OpenXForNPI/Analysis/OpenXForNPI/Python/PythonNPI/venv"
+set -gx VIRTUAL_ENV "/Users/markrbower/Dropbox/Documents/Concepts/2020_12_01_NeocortexForNPI/NeocortexForNPI/Analysis/NeocortexForNPI/Python/PythonNPI_project/venv"
 
 set -gx _OLD_VIRTUAL_PATH $PATH
 set -gx PATH "$VIRTUAL_ENV/bin" $PATH
